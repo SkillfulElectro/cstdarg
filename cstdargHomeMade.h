@@ -4,7 +4,6 @@
 /*
 	so we gonna explore how cstdarg works here
 */
-template<typename ThebiggestNoneEllipsis>
 class Ellipsis {
 	/*
 		so basically first we make a object which with class type va_list
@@ -23,9 +22,12 @@ public:
 
 			// so what we do here is similar to that the only diff thing we do is
 			that we take what is the biggest type in an parameters too !
+			*			so what i mean by biggest type ?
+			*				so it means double ( 8 byte ) in visual studio 2022
 		*/
+
 		void* address = &last_nonEllipsis;
-		Ellipsis_ptr = static_cast<ThebiggestNoneEllipsis*>(address) + 1;
+		Ellipsis_ptr = static_cast<double*>(address) + 1;
 		/*
 			so the heart of our class is here ! how do we get the address of it?
 
@@ -53,7 +55,7 @@ public:
 		/*
 			reading value of our ellipsis element from array
 		*/
-		Ellipsis_ptr = static_cast<ThebiggestNoneEllipsis*>(Ellipsis_ptr) + 1;
+		Ellipsis_ptr = static_cast<double*>(Ellipsis_ptr) + 1;
 		/*
 			and now jumping to next ellipsis element for next call !
 
@@ -75,7 +77,7 @@ public:
 		/*
 			reading value of our ellipsis element from array
 		*/
-		Ellipsis_ptr = static_cast<ThebiggestNoneEllipsis*>(Ellipsis_ptr) + 1;
+		Ellipsis_ptr = static_cast<double*>(Ellipsis_ptr) + 1;
 		/*
 			and now jumping to next ellipsis element for next call !
 
@@ -90,4 +92,4 @@ public:
 
 		//CopyRight SkillFulElectro LLC***
 
-*/
+*/	
