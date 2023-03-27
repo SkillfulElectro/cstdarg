@@ -1,6 +1,6 @@
 # cstdarg
-here we gonna walk through cstdarg close source header
+so basically i was really curious about how cstdarg header works , so i did my best for writing it myself !
 
-with this header im going to explain you how cstdarg header works :D
+i guess there are many people who might be curious about it so enjoy my header which works kinda same as cstdarg header
 
-enjoy it ;)
+feel free to enjoy learning :D
