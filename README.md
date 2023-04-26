@@ -8,6 +8,4 @@ i explained everything in my header about it so :
 feel free to enjoy learning :D
 
 
-Made With ♥ in Iran
 
-#بومی_سازی
